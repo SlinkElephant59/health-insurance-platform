@@ -19,6 +19,15 @@ export const healthTip = defineType({
       rows: 5,
       validation: (Rule) => Rule.required(),
     }),
+    // NEW IMAGE FIELD 
+    defineField({
+      name: 'image',
+      title: 'Cover Image',
+      type: 'image',
+      options: {
+        hotspot: true, // Allows you to crop and focus the image in the studio
+      },
+    }),
     defineField({
       name: 'category',
       title: 'Category',
